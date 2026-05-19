@@ -7,7 +7,6 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/tl1-tp6-2026-Lenu-ux.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +18,6 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/tl1-tp6-2026-Lenu-ux.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -31,9 +29,7 @@
             "type": "process",
             "args": [
                 "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/tl1-tp6-2026-Lenu-ux.csproj"
+                "run"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 
 int a;
 int b;
@@ -10,6 +9,7 @@ Console.WriteLine("valor de b:"+b);
 
 int n;
 int n2;
+int numInvert = 0;
 Console.WriteLine("Ingrese un numero");
 string ?c;
 c=Console.ReadLine();
@@ -17,15 +17,25 @@ c=Console.ReadLine();
 if (int.TryParse(c, out n))
 {
     Console.WriteLine("convertido: "+n);
+    if (n > 0)
+    {
+        while( n > 0)
+            {
+                int aux = n % 10;
+                n2 = n / 10;
+                numInvert = numInvert * 10 + aux;  
+                n=n2;
+            }
+
+           
+            Console.WriteLine(numInvert);
+
+    } else
+    {
+        Console.WriteLine("Entrada no valida...Ingrese un numero mayor a cero");
+
+    }
 }else
 {
     Console.WriteLine("Entrada no valida...Ingrese un numero");
 }
-if (n>0)
-{
-    int aux=n%10;
-    n2=n/10;
-    Console.WriteLine(aux);
-    Console.WriteLine(n2);
-}
-   
