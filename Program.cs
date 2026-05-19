@@ -39,3 +39,52 @@ if (int.TryParse(c, out n))
 {
     Console.WriteLine("Entrada no valida...Ingrese un numero");
 }
+
+float valorAbs,cuadrado,raiz;
+float m;
+int entero;
+string ?num;
+Console.WriteLine("Ingrese un numero:");
+num=Console.ReadLine();
+if (float.TryParse(num, out m))
+{
+    //valor absoluto
+    if (m>=0)
+    {
+        valorAbs=m;
+    }else
+    {
+        valorAbs=m*(-1);
+    }
+    //cuadrado
+    cuadrado=m*m;
+    //raiz cuadrada
+    if (m >= 0)
+    {
+        raiz = m;
+
+        for (int i = 0; i < 10; i++)
+        {
+            raiz = (raiz + m / raiz) / 2;
+        }
+    }
+    //seno
+    float y=m*3.141592f/180f;
+    float seno=y-(y*y*y)/6 + (y*y*y*y)/120;
+    //coseno
+    float coseno=1-(y*y)/2+(y*y*y*y)/24;
+    //parte entera
+    entero=(int)m;
+    //mostrar
+    Console.WriteLine("Valor absoluto: "+ valorAbs);
+    Console.WriteLine("El cuadrado: "+cuadrado);
+    Console.WriteLine("Raiz cuadrada: " + raiz);
+    Console.WriteLine("Seno: "+ seno);
+    Console.WriteLine("Coseno: "+ coseno);
+    Console.WriteLine("Parte entera: "+ entero);
+
+}
+    else{
+
+    Console.WriteLine("Numero invalido..");
+}
