@@ -40,7 +40,7 @@ if (int.TryParse(c, out n))
     Console.WriteLine("Entrada no valida...Ingrese un numero");
 }
 
-float valorAbs,cuadrado,raiz;
+float valorAbs,cuadrado,raiz=0;
 float m;
 int entero;
 string ?num;
