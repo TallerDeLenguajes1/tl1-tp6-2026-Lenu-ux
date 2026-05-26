@@ -39,3 +39,9 @@ if (int.TryParse(c, out n))
 {
     Console.WriteLine("Entrada no valida...Ingrese un numero");
 }
+
+//ejercicio 4
+Console.WriteLine("Ingrese la frase:");
+string cadena=Console.ReadLine() ?? "";
+int longitud= cadena.Length;
+Console.WriteLine($"La longitud es {longitud}");
