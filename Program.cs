@@ -88,3 +88,31 @@ if (float.TryParse(num, out m))
 
     Console.WriteLine("Numero invalido..");
 }
+
+//maximos y minimos
+int num1,num2;
+int max,min;
+Console.WriteLine("Ingrese el primer numero: ");
+if (!int.TryParse(Console.ReadLine(),out num1))
+{
+    Console.WriteLine("Error, ingrese el numero nuevamente");
+}
+Console.WriteLine("Ingrese el segundo numero: ");
+if (!int.TryParse(Console.ReadLine(),out num2))
+{
+    Console.WriteLine("Error, ingrese el numero nuevamente");
+    
+}
+
+if (num1>num2)
+{
+    max=num1;
+    min=num2;
+}else
+{
+    max=num2;
+    min=num1;
+}
+
+Console.WriteLine("El maximo numero es: "+ max);
+Console.WriteLine("EL minimo numero es: "+min);
