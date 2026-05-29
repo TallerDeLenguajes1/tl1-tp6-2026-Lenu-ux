@@ -45,3 +45,7 @@ Console.WriteLine("Ingrese la frase:");
 string cadena=Console.ReadLine() ?? "";
 int longitud= cadena.Length;
 Console.WriteLine($"La longitud es {longitud}");
+System.Console.WriteLine("Ingrese otra frase: ");
+string cadena2= Console.ReadLine() ?? "";
+string fraseConcat= $"{cadena} {cadena2}";
+System.Console.WriteLine("Frase concatenada: "+fraseConcat);
