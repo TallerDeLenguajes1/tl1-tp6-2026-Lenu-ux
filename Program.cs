@@ -49,3 +49,23 @@ System.Console.WriteLine("Ingrese otra frase: ");
 string cadena2= Console.ReadLine() ?? "";
 string fraseConcat= $"{cadena} {cadena2}";
 System.Console.WriteLine("Frase concatenada: "+fraseConcat);
+
+System.Console.WriteLine("Ingrese la posicion a cortar de la frase 1:");
+int eliminar;
+string ?borr;
+borr=Console.ReadLine();
+if (int.TryParse(borr, out eliminar))
+{
+    if (eliminar < longitud)
+    {
+        string resultado=cadena.Substring(eliminar);
+        System.Console.WriteLine("Frase extraida  es:"+ resultado);
+    }else
+    {
+        System.Console.WriteLine("Error...no se encontro la posicion");
+    }
+    
+}else
+{
+    System.Console.WriteLine("Error...ingrese un numero");
+}
