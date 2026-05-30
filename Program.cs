@@ -69,3 +69,21 @@ if (int.TryParse(borr, out eliminar))
 {
     System.Console.WriteLine("Error...ingrese un numero");
 }
+//ejercicio 4 final
+Console.WriteLine("Ingrese la frase a analizar:");
+string frase= Console.ReadLine() ?? "";
+foreach (char letra in frase)
+{
+    System.Console.WriteLine($"Letra:{letra}");
+}
+//buscar ocurrencia
+System.Console.WriteLine("Ingrese la palabra a buscar: ");
+string palabraBuscar= Console.ReadLine() ?? "";
+int posicion=frase.IndexOf(palabraBuscar);
+if (posicion != -1)
+{
+    System.Console.WriteLine($"Palabra esta en el indice {posicion}");
+}else
+{
+    System.Console.WriteLine("La palabra no se encontro en la cadena");
+}
