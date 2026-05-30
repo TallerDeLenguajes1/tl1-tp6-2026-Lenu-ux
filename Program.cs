@@ -87,3 +87,15 @@ if (posicion != -1)
 {
     System.Console.WriteLine("La palabra no se encontro en la cadena");
 }
+
+//separar cadena
+System.Console.WriteLine("Ingrese el catalago separadas con ',': ");
+string entrada=Console.ReadLine()?? "";
+
+string[]resultados =entrada.Split(',');
+
+System.Console.WriteLine("----Resultados de la division---");
+foreach (string elemento in resultados)
+{
+    System.Console.WriteLine($"Elemento:{elemento.Trim()}");
+}
