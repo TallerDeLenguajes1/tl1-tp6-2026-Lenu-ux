@@ -148,22 +148,30 @@ string ? opcion;
             {
                 case 1:
                         resultado=a+b;
-            Console.WriteLine("Resultado :"+ resultado);
+
+            //Console.WriteLine("Resultado :"+ resultado);
+            string mensaje=$"La suma de {a.ToString()} y de {b.ToString()} es igual a: {resultado.ToString()}";
+            System.Console.WriteLine(mensaje);
                         break;
                 case 2:
                         resultado=a-b;
-            Console.WriteLine("Resultado :"+ resultado);
+            //Console.WriteLine("Resultado :"+ resultado);
+             string mensaje2=$"La diferencia de {a.ToString()} y de {b.ToString()} es igual a: {resultado.ToString()}";
+            System.Console.WriteLine(mensaje2);
 
                         break;
                 case 3:
                         resultado=a*b;
-            Console.WriteLine("Resultado :"+ resultado);
+            //Console.WriteLine("Resultado :"+ resultado);
+             string mensaje3=$"El producto de {a.ToString()} y de {b.ToString()} es igual a: {resultado.ToString()}";
+            System.Console.WriteLine(mensaje3);
 
                         break;
                 case 4:
                         resultado=a/b;
-            Console.WriteLine("Resultado :"+ resultado);
-
+            //Console.WriteLine("Resultado :"+ resultado);
+                 string mensaje4=$"La division de {a.ToString()} y de {b.ToString()} es igual a: {resultado.ToString()}";
+            System.Console.WriteLine(mensaje4);
                         break;
                 default:
                 break;
